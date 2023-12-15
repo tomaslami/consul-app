@@ -1,0 +1,29 @@
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.line {
+  width: 0%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5rem;
+  transition: 0.4s ease-in-out;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.5s all ease;
+}
+
+.link:hover .line {
+  width: 100%;
+  transition: 0.5s all ease;
+}
