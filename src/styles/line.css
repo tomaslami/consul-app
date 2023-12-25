@@ -27,3 +27,9 @@
   width: 100%;
   transition: 0.5s all ease;
 }
+
+@media screen and (min-width: 1580px) {
+  .link {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,30 @@
+---
+import CardInformation from "./CardInformation.astro"
+import Contabilidad from "../../public/icons/Contabilidad.svg"
+---
+
+<div
+  class="w-full h-[1200px] lg:h-[500px] flex bg-[#cfcfcf] flex-col justify-center items-center gap-8"
+>
+  <h1 class="md:text-4xl text-3xl font-bold">Principales servicios</h1>
+  <div
+    class="w-full flex lg:flex-row flex-col gap-8 justify-center items-center"
+  >
+    <CardInformation
+      title="Contabilidad y Auditoria"
+      text="Auditoría de Estados contables, Asesoramiento Contable integral e Implementación de sistemas informáticos contables."
+      icon="/icons/Contabilidad.svg"
+    />
+
+    <CardInformation
+      title="Laboral y Previsional"
+      text="Liquidación de Sueldos y Cargas Sociales, Asesorías y atención de requerimientos."
+      icon="/icons/Laburo.svg"
+    />
+    <CardInformation
+      title="Impuestos"
+      text="Asesoramiento Impositivo Integral, Liquidación de Impuestos Nacionales y Provinciales, Atención de requerimientos ante organismos de fiscalización, Inscripciones."
+      icon="/icons/Impuestos.svg"
+    />
+  </div>
+</div>

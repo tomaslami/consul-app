@@ -8,9 +8,13 @@ interface Props {
 const { title, href } = Astro.props
 ---
 
-<li class="item w-full flex justify-center flex-row items-center">
-  <a class="link text-white font-Poppins text-2xl font-bold" href={href}
-    >{title}</a
-  >
-  <div class="line"></div>
+<li
+  class="item w-full flex justify-center flex-col items-center transition-all"
+>
+  <a
+    class="link text-white font-Poppins text-2xl 2xl:text-6xl font-bold flex justify-center items-center transition-all flex-col"
+    href={href}
+    >{title}
+    <div class="line"></div>
+  </a>
 </li>
