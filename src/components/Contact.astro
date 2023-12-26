@@ -6,7 +6,7 @@
   class="md:w-1/2 w-full h-2/3 md:h-full flex justify-center items-center flex-col gap-10"
 >
   <h1
-    class="h-1/12 sm:w-[400px] w-[300px] text-center sm:text-start text-2xl font-semibold text-white"
+    class="h-1/12 sm:w-[400px] w-[350px] text-start text-2xl font-semibold text-white"
   >
     Contáctame
   </h1>
@@ -22,6 +22,7 @@
         type="text"
         placeholder="Nombre"
         class="w-1/2 h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+        autocomplete="off"
       />
       <input
         id="email"
@@ -29,6 +30,7 @@
         type="email"
         placeholder="Email"
         class="w-1/2 h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+        autocomplete="off"
       />
     </div>
     <div class="w-full flex justify-center items-center flex-col gap-6">
@@ -38,13 +40,14 @@
         type="text"
         placeholder="Asunto"
         class="w-full h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+        autocomplete="off"
       />
       <textarea
         id="message"
         name="message"
         placeholder="Mensaje"
         class="w-full h-[145px] rounded-sm resize-none focus:outline-none px-2 py-1 bg-[#0D4148CC] text-white"
-      ></textarea>
+        autocomplete="off"></textarea>
     </div>
     <div class="w-full flex justify-end items-center flex-row">
       <button
@@ -58,4 +61,14 @@
       </button>
     </div>
   </form>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("miFormulario")
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault()
+        })
+      }
+    })
+  </script>
 </div>
