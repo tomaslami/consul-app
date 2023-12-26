@@ -1,0 +1,61 @@
+---
+
+---
+
+<div
+  class="md:w-1/2 w-full h-2/3 md:h-full flex justify-center items-center flex-col gap-10"
+>
+  <h1
+    class="h-1/12 sm:w-[400px] w-[300px] text-center sm:text-start text-2xl font-semibold text-white"
+  >
+    Contáctame
+  </h1>
+  <form
+    class="sm:w-[400px] w-[350px] h-11/12 flex justify-center items-center flex-col gap-6"
+    action="https://formspree.io/f/moqgazvn"
+    method="POST"
+  >
+    <div class="w-full flex flex-row justify-center items-center gap-5">
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Nombre"
+        class="w-1/2 h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+      />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Email"
+        class="w-1/2 h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+      />
+    </div>
+    <div class="w-full flex justify-center items-center flex-col gap-6">
+      <input
+        id="subject"
+        name="subject"
+        type="text"
+        placeholder="Asunto"
+        class="w-full h-[30px] p-2 bg-[#0D4148CC] focus:outline-none text-white"
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Mensaje"
+        class="w-full h-[145px] rounded-sm resize-none focus:outline-none px-2 py-1 bg-[#0D4148CC] text-white"
+      ></textarea>
+    </div>
+    <div class="w-full flex justify-end items-center flex-row">
+      <button
+        type="submit"
+        class="font-medium text-sm text-white w-[100px] h-[30px] rounded-sm flex flex-row justify-center items-center gap-2 bg-[#0d4148]"
+        >Enviar <img
+          src="/icons/SendIcon.svg"
+          alt="Enviar"
+          class="w-[18px] h-[18px]"
+        />
+      </button>
+    </div>
+  </form>
+</div>

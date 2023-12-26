@@ -1,8 +1,11 @@
 ---
-import ContactMe from "./ContactMe"
+import Contact from "./Contact.astro"
+import Redes from "./Redes.astro"
 ---
 
 <footer
-  class="w-full h-[500px] bg-[url(/images/FotoFinal.png)] bg-cover bg-no-repeat bg-center bg-fixed"
+  class="w-full md:h-[500px] h-screen bg-[url(/images/FotoFinal.png)] bg-cover bg-no-repeat bg-center bg-fixed flex flex-col md:flex-row"
 >
+  <Contact />
+  <Redes />
 </footer>
