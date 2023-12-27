@@ -61,15 +61,32 @@
         />
       </button>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("miFormulario")
+        if (form) {
+          form.addEventListener("submit", function (event) {
+            event.preventDefault()
+            const nameInput = document.getElementById(
+              "name",
+            ) as HTMLInputElement
+            const emailInput = document.getElementById(
+              "email",
+            ) as HTMLInputElement
+            const subjectInput = document.getElementById(
+              "subject",
+            ) as HTMLInputElement
+            const messageInput = document.getElementById(
+              "message",
+            ) as HTMLTextAreaElement
+
+            if (nameInput) nameInput.value = ""
+            if (emailInput) emailInput.value = ""
+            if (subjectInput) subjectInput.value = ""
+            if (messageInput) messageInput.value = ""
+          })
+        }
+      })
+    </script>
   </form>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("miFormulario")
-      if (form) {
-        form.addEventListener("submit", function (event) {
-          event.preventDefault()
-        })
-      }
-    })
-  </script>
 </div>
