@@ -63,17 +63,11 @@
       </button>
     </div>
     <script>
-      function resetForm(event: Event) {
+      const form = document.getElementById("miFormulario") as HTMLFormElement
+      form.addEventListener("submit", function (event) {
         event.preventDefault()
-        let form = document.getElementById("miFormulario")
-        if (form) {
-          let form = document.getElementById("miFormulario") as HTMLFormElement
-          if (form) {
-            form.reset()
-          }
-        }
-      }
-      document.addEventListener("submit", resetForm)
+        form.reset()
+      })
     </script>
   </form>
 </div>
