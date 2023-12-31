@@ -2,25 +2,35 @@
 import "../styles/line.css"
 interface Props {
   title: string
-  text: string
+  item1: string
+  item2: string
+  item3: string
   icon: string
 }
 
-const { title, text, icon } = Astro.props
+const { title, item1, item2, item3, icon } = Astro.props
 ---
 
 <div
-  class="sm:w-[340px] w-[300px] sm:h-[300px] h-[275px] bg-white flex flex-row rounded-2xl shadow-lg p-4"
+  class="sm:w-[340px] w-[300px] sm:h-[300px] h-[275px] bg-white flex justify-center items-center flex-row rounded-2xl shadow-lg p-4"
 >
   <div class="flex flex-col items-center justify-center h-full gap-5">
-    <h3 class="flex items-start text-2xl font-bold text-center">
+    <h3 class="h-1/12 flex items-start text-2xl font-bold text-center">
       {title}
     </h3>
-    <p
-      class="h-2/3 text-center lg:text-base text-sm flex justify-center items-center"
+    <ul
+      class="list-disc flex justify-center items-center flex-col w-full gap-3 pl-6"
     >
-      {text}
-    </p>
+      <li class="w-full text-start text-sm">
+        {item1}
+      </li>
+      <li class="w-full text-start text-sm">
+        {item2}
+      </li>
+      <li class="w-full text-start text-sm">
+        {item3}
+      </li>
+    </ul>
     <div class="h-1/6 w-full flex items-end justify-center rounded-full">
       <img src={icon} alt="" class="w-[40px] h-[40px]" />
     </div>
